@@ -1,0 +1,130 @@
+$grayish-dark-blue: #33323D;
+$very-light-grey:#fafafa;
+$dark-blue: #203A4C;
+$desaturated-cyan:#5fb4a2;
+$font-heading:'Ibarra Real Nova',
+serif;
+$font-body:'Public Sans',
+sans-serif;
+$font-weight3:300;
+$font-weight4:400;
+$font-weight6:600;
+$font-weight7:700;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//-----------------Navbar section---------------
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        max-width: 1500px;
+        .navbar-logo {
+            display: flex;
+            justify-self: start;
+            margin-left: 20px;
+            align-items: center;
+        }
+        .nav-menu {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            text-align: center;
+            width: 60vw;
+            justify-content: end;
+            margin-right: 2rem;
+            .nav-item {
+                .nav-links {
+                    color: $dark-blue;
+                    font-family: $font-body;
+                    font-weight: $font-weight4;
+                    display: flex;
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    height: 100%;
+                    &:hover {
+                        color: $desaturated-cyan;
+                        border-bottom: 3px solid $desaturated-cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    .fa-bars,
+    .fa-times {
+        color: $dark-blue;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column !important;
+        grid-gap: 5px;
+        width: 100%;
+        height: 40vh;
+        position: absolute;
+        top: 80px;
+        right: - 100%;
+        opacity: 1;
+        transition: all 0.3s ease-in;
+        .navbar-logo {
+            position: absolute !important;
+            top: 0 !important;
+            right: 0 !important;
+            transform: translate(25%, 50%) !important;
+        }
+    }
+    .nav-menu.active {
+        justify-content: start !important;
+        background-color: $dark-blue;
+        right: 0;
+        opacity: 1;
+        transition: all 0.3s ease;
+        z-index: 1;
+        .nav-item {
+            .nav-links {
+                text-align: center;
+                margin-top: 5px;
+                padding: 2rem !important;
+                color: white !important;
+                width: 100%;
+                display: table;
+                &:hover {
+                    color: $dark-blue !important;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.8rem;
+        transform: translate(-100%, 60%);
+        cursor: pointer;
+        .fa-times {
+            font-size: 2rem;
+        }
+    }
+}

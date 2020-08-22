@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.navbar .navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.navbar .navbar-container .navbar-logo {
+  display: flex;
+  justify-self: start;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.navbar .navbar-container .nav-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.navbar .navbar-container .nav-menu .nav-item .nav-links {
+  color: #203A4C;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.navbar .navbar-container .nav-menu .nav-item .nav-links:hover {
+  color: #5fb4a2;
+  border-bottom: 3px solid #5fb4a2;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+}
+
+.menu-icon .fa-bars,
+.menu-icon .fa-times {
+  color: #203A4C;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column !important;
+    grid-gap: 5px;
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+  }
+  .nav-menu .navbar-logo {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    transform: translate(25%, 50%) !important;
+  }
+  .nav-menu.active {
+    justify-content: start !important;
+    background-color: #203A4C;
+    right: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  .nav-menu.active .nav-item .nav-links {
+    text-align: center;
+    margin-top: 5px;
+    padding: 2rem !important;
+    color: white !important;
+    width: 100%;
+    display: table;
+  }
+  .nav-menu.active .nav-item .nav-links:hover {
+    color: #203A4C !important;
+    background-color: white;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+  }
+  .menu-icon .fa-times {
+    font-size: 2rem;
+  }
+}
