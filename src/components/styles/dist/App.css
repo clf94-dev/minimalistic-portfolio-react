@@ -88,8 +88,8 @@
     z-index: 1;
   }
   .nav-menu.active .nav-item .nav-links {
-    text-align: center;
-    margin-top: 5px;
+    justify-content: center !important;
+    margin: 5px 0 auto;
     padding: 2rem !important;
     color: white !important;
     width: 100%;

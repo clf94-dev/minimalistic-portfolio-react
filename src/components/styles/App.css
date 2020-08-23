@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -46,13 +47,13 @@
   font-weight: 400;
   display: flex;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1.7rem 1rem;
   height: 100%;
 }
 
 .navbar .navbar-container .nav-menu .nav-item .nav-links:hover {
   color: #5fb4a2;
-  border-bottom: 3px solid #5fb4a2;
+  border-bottom: 4px solid #5fb4a2;
 }
 
 .menu-icon {
@@ -93,8 +94,8 @@
     z-index: 1;
   }
   .nav-menu.active .nav-item .nav-links {
-    text-align: center;
-    margin-top: 5px;
+    justify-content: center !important;
+    margin: 5px 0 auto;
     padding: 2rem !important;
     color: white !important;
     width: 100%;
@@ -115,5 +116,50 @@
   }
   .menu-icon .fa-times {
     font-size: 2rem;
+  }
+}
+
+.hero-section-row {
+  padding: 5% 7%;
+}
+
+@media screen and (max-width: 375px) {
+  .hero-section-row {
+    display: flex;
+    flex-flow: column-reverse !important;
+  }
+}
+
+.hero-section-row .text-col {
+  padding: 3% 7%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 960px) {
+  .hero-section-row .text-col {
+    position: absolute;
+    left: 0;
+    top: 35vw;
+    height: 27vw;
+    padding-right: 12%;
+  }
+}
+
+.hero-section-row .text-col h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-section-row .img-col .hero-section-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  .hero-section-row .img-col .hero-section-img {
+    width: 200% !important;
   }
 }

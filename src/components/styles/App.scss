@@ -23,6 +23,7 @@ $font-weight7:700;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -53,11 +54,11 @@ $font-weight7:700;
                     font-weight: $font-weight4;
                     display: flex;
                     text-decoration: none;
-                    padding: 0.5rem 1rem;
+                    padding: 1.7rem 1rem;
                     height: 100%;
                     &:hover {
                         color: $desaturated-cyan;
-                        border-bottom: 3px solid $desaturated-cyan;
+                        border-bottom: 4px solid $desaturated-cyan;
                     }
                 }
             }
@@ -102,8 +103,8 @@ $font-weight7:700;
         z-index: 1;
         .nav-item {
             .nav-links {
-                text-align: center;
-                margin-top: 5px;
+                justify-content: center !important;
+                margin: 5px 0 auto;
                 padding: 2rem !important;
                 color: white !important;
                 width: 100%;
@@ -125,6 +126,42 @@ $font-weight7:700;
         cursor: pointer;
         .fa-times {
             font-size: 2rem;
+        }
+    }
+}
+
+//---------------------Hero Section ------------------
+.hero-section-row {
+    padding: 5% 7%;
+    @media screen and (max-width: 375px) {
+        display: flex;
+        flex-flow: column-reverse !important;
+    }
+    .text-col {
+        padding: 3% 7%;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        @media screen and (min-width: 960px) {
+            position: absolute;
+            left: 0;
+            top: 35vw;
+            height: 27vw;
+            padding-right: 12%;
+        }
+        h1 {
+            font-family: $font-heading;
+            font-size: 40px;
+            font-weight: $font-weight7;
+            margin-bottom: 10px;
+        }
+    }
+    .img-col {
+        .hero-section-img {
+            width: 100%;
+            @media screen and (min-width: 960px) {
+                width: 200% !important;
+            }
         }
     }
 }
