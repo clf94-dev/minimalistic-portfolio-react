@@ -4,6 +4,7 @@ import Footer from './Footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './styles/App.css';
 import Home from './pages/Home.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 function App() {
     return (
         <div>
@@ -11,6 +12,7 @@ function App() {
                 <Navbar/>
                 <Switch>
                     <Route path='/' exact component={Home}></Route>
+                    <Route path='/portfolio' exact component={Portfolio}></Route>
                 </Switch>
                 <Footer/>
             </Router>
