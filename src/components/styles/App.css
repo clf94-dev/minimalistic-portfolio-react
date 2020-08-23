@@ -132,6 +132,7 @@
 
 .hero-section-row .text-col {
   padding: 3% 7%;
+  z-index: 1;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -142,7 +143,7 @@
     position: absolute;
     left: 0;
     top: 35vw;
-    height: 27vw;
+    height: 26vw;
     padding-right: 12%;
   }
 }
@@ -161,5 +162,43 @@
 @media screen and (min-width: 960px) {
   .hero-section-row .img-col .hero-section-img {
     width: 200% !important;
+  }
+}
+
+.footer-cont {
+  background-color: #203A4C;
+  z-index: 2;
+  padding: 5% 7%;
+  align-items: center;
+}
+
+.footer-cont .footer-item {
+  text-align: center;
+}
+
+.footer-cont .footer-item .footer-link {
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #fafafa;
+}
+
+.footer-cont .footer-item .footer-link:hover {
+  color: #5fb4a2;
+}
+
+.footer-cont .footer-item .social-row {
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.footer-cont .footer-item .social-row .social-icon {
+  margin: auto 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .footer-cont {
+    text-align: center;
   }
 }
