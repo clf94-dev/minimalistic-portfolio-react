@@ -414,3 +414,30 @@
     text-align: center;
   }
 }
+
+.contact-top {
+  padding: 2% 7%;
+}
+
+.contact-top h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.contact-top p {
+  margin: 10px auto;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.input-cont {
+  padding: 3% 7%;
+}
+
+.input-cont h2 {
+  font-size: 45px;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 600;
+}
