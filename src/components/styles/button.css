@@ -3,7 +3,7 @@
 }
 
 .btn {
-    padding: 5%;
+    padding: 3% 5%;
     outline: none;
     border: none;
     cursor: pointer;
@@ -30,6 +30,7 @@
 .btn--large {
     padding: 12px 26px;
     font-size: 20px;
+    max-height: 100px;
 }
 
 .btn--primary:hover {

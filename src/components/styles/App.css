@@ -212,6 +212,129 @@
   }
 }
 
+.project-row {
+  padding: 5% 7%;
+  height: fit-content;
+}
+
+.project-row .text-col {
+  padding: 10% 7%;
+}
+
+.project-row .text-col h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #33323D;
+  margin-bottom: 10px;
+}
+
+.project-row .text-col p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #33323D;
+  margin-bottom: 10px;
+}
+
+.project-row .text-col Button {
+  width: 250px;
+  font-family: "Public Sans", sans-serif;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 756px) {
+  .project-row .text-col Button {
+    width: 100%;
+  }
+}
+
+.project-row .img-col .project-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 756px) {
+  .reverse {
+    flex-flow: row-reverse;
+  }
+}
+
+.full-project-cont {
+  padding: 5% 7%;
+}
+
+.full-project-cont .project-top {
+  align-self: center;
+  width: 100%;
+}
+
+.full-project-cont .description-row .left-text {
+  padding-right: 20%;
+}
+
+.full-project-cont .description-row .left-text hr {
+  justify-self: left;
+  margin: 30px 0;
+  width: 60%;
+}
+
+.full-project-cont .description-row .left-text h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.full-project-cont .description-row .left-text p {
+  margin: 10px auto;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.full-project-cont .description-row .left-text h5 {
+  margin: 10px auto;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5fb4a2;
+}
+
+.full-project-cont .description-row .left-text Button {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 756px) {
+  .full-project-cont .description-row .left-text Button {
+    width: 50%;
+  }
+}
+
+.full-project-cont .description-row .right-text {
+  margin-top: 4%;
+}
+
+.full-project-cont .description-row .right-text .text-cont {
+  padding-right: 20%;
+}
+
+.full-project-cont .description-row .right-text .text-cont h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.full-project-cont .description-row .right-text .text-cont p {
+  margin: 10px auto;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.full-project-cont .description-row .right-text img {
+  width: 100%;
+  margin: 15px auto;
+}
+
 .cta-cont {
   padding: 5% 7%;
   align-items: center;

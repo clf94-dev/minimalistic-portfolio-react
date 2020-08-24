@@ -4,7 +4,8 @@ import Footer from './Footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './styles/App.css';
 import Home from './pages/Home.jsx'
-import Portfolio from './pages/Portfolio.jsx'
+import Portfolio from './pages/Portfolio.jsx';
+import FullProject from './pages/FullProject.jsx'
 function App() {
     return (
         <div>
@@ -12,7 +13,8 @@ function App() {
                 <Navbar/>
                 <Switch>
                     <Route path='/' exact component={Home}></Route>
-                    <Route path='/portfolio' exact component={Portfolio}></Route>
+                    <Route path='/portfolio'  component={Portfolio}></Route>
+                    <Route path='/full-project/:index'  component={FullProject}></Route>
                 </Switch>
                 <Footer/>
             </Router>

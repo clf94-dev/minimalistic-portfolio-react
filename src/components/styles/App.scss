@@ -203,6 +203,111 @@ $font-weight7:700;
     }
 }
 
+//----------------------Portofolio Rows-----------------
+.project-row {
+    padding: 5% 7%;
+    height: fit-content;
+    .text-col {
+        padding: 10% 7%;
+        h3 {
+            font-family: $font-heading;
+            font-size: 40px;
+            font-weight: $font-weight6;
+            color: $grayish-dark-blue;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: $font-body;
+            font-size: 18px;
+            font-weight: $font-weight4;
+            color: $grayish-dark-blue;
+            margin-bottom: 10px;
+        }
+        Button {
+            width: 250px;
+            font-family: $font-body;
+            margin: 30px auto;
+            @media screen and (max-width: 756px) {
+                width: 100%;
+            }
+        }
+    }
+    .img-col {
+        .project-img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 756px) {
+    .reverse {
+        flex-flow: row-reverse;
+    }
+}
+
+.full-project-cont {
+    padding: 5% 7%;
+    .project-top {
+        align-self: center;
+        width: 100%;
+    }
+    .description-row {
+        .left-text {
+            padding-right: 20%;
+            hr {
+                justify-self: left;
+                margin: 30px 0;
+                width: 60%;
+            }
+            h2 {
+                font-family: $font-heading;
+                font-weight: $font-weight7;
+                font-size: 40px;
+            }
+            p {
+                margin: 10px auto;
+                font-family: $font-body;
+                font-weight: $font-weight3;
+                font-size: 15px;
+            }
+            h5 {
+                margin: 10px auto;
+                font-family: $font-body;
+                font-size: 16px;
+                font-weight: $font-weight4;
+                color: $desaturated-cyan;
+            }
+            Button {
+                margin-top: 20px;
+                @media screen and (max-width: 756px) {
+                    width: 50%;
+                }
+            }
+        }
+        .right-text {
+            margin-top: 4%;
+            .text-cont {
+                padding-right: 20%;
+                h3 {
+                    font-family: $font-heading;
+                    font-size: 35px;
+                    font-weight: $font-weight6;
+                }
+                p {
+                    margin: 10px auto;
+                    font-family: $font-body;
+                    font-weight: $font-weight3;
+                    font-size: 15px;
+                }
+            }
+            img {
+                width: 100%;
+                margin: 15px auto;
+            }
+        }
+    }
+}
+
 //----------------------CTA section ------------------
 .cta-cont {
     padding: 5% 7%;

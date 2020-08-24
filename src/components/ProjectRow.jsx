@@ -1,11 +1,13 @@
 import React from 'react'
 import {Grid} from '@material-ui/core/';
 import {Button} from './Button';
+
 import './styles/App.css';
-import Manage from './images/portfolio/desktop/image-portfolio-manage.jpg;
-import Bookmark from './images/portfolio/desktop/image-portfolio-bookmark.jpg';
-import Insure from './images/portfolio/desktop/image-portfolio-insure.jpg';
-import Fylo from './images/portfolio/desktop/image-portfolio-fylo.jpg';
+
+import Manage from './images/image-portfolio-manage.jpg';
+import Bookmark from './images/image-portfolio-bookmark.jpg';
+import Insure from './images/image-portfolio-insure.jpg';
+import Fylo from './images/image-portfolio-fylo.jpg';
 
 function ProjectRow(props) {
     const ProjectsImg = [Manage, Bookmark, Insure, Fylo];
@@ -23,10 +25,11 @@ function ProjectRow(props) {
                     <p>{props.text}</p>
                     <Button
                         className='project-btn'
-                        link='/full-project'
+                        link={`/full-project/${props.index}`}
                         buttonStyle='btn--outline'
                         buttonSize='btn--large'>
-                        VIEW PROJECT</Button>
+                        VIEW PROJECT
+                          </Button>
 
                 </Grid>
 
