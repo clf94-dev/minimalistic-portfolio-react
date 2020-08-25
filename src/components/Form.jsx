@@ -4,7 +4,6 @@ import {Grid, Button} from '@material-ui/core/';
 import ErrorMessage from './ErrorMessage'
 import './styles/Form.scss';
 
-
 function Form() {
     const {handleSubmit, register, errors} = useForm();
     const onSubmit = values => console.log(values);
@@ -23,7 +22,7 @@ function Form() {
                     }}
                         ref={register({required: true, maxLength: 20})}
                         className="first-name input"/>
-                    <ErrorMessage  error={errors.firstName}/>
+                    <ErrorMessage error={errors.firstName}/>
                     <h5 className='title'>Email</h5>
                     <input
                         type="email"
@@ -33,10 +32,17 @@ function Form() {
                         borderColor: "red"
                     }}
                         ref={register({required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i})}className="email-address input"/>
-                    <ErrorMessage  error={errors.email}/>
+                    <ErrorMessage error={errors.email}/>
                     <h5 className='title'>Message</h5>
-                    <input type="text" name="message" placeholder="Your message.." style={errors.message &&{borderColor: "red"} } ref={register({required: true} )}className="message input"/>
-<ErrorMessage   error={errors.message} />
+                    <input
+                        type="text"
+                        name="message"
+                        placeholder="Your message.."
+                        style={errors.message && {
+                        borderColor: "red"
+                    }}
+                        ref={register({required: true})}className="message input"/>
+                    <ErrorMessage error={errors.message}/>
                 </form>
                 <Button type="submit" onClick={handleSubmit(onSubmit)}>
                     Claim your free trial</Button>

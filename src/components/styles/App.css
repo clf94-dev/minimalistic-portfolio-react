@@ -241,6 +241,7 @@
   width: 250px;
   font-family: "Public Sans", sans-serif;
   margin: 30px auto;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 756px) {
@@ -417,19 +418,27 @@
 
 .contact-top {
   padding: 2% 7%;
+  align-items: center;
+  display: table;
 }
 
-.contact-top h3 {
+.contact-top .title-col {
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contact-top .title-col h3 {
   font-family: "Ibarra Real Nova", serif;
   font-size: 35px;
   font-weight: 600;
 }
 
-.contact-top p {
+.contact-top .right-col p {
   margin: 10px auto;
   font-family: "Public Sans", sans-serif;
   font-weight: 300;
   font-size: 15px;
+  padding-right: 15%;
 }
 
 .input-cont {
