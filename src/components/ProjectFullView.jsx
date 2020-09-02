@@ -45,14 +45,16 @@ export default function ProjectFullView(props) {
                         <p>{PortfolioFullProj[props.index].textRight}</p>
                         <h5>{PortfolioFullProj[props.index].designType}</h5>
                         <h5>{PortfolioFullProj[props.index].languages}</h5>
-                        <button
+                        
+                        <a href={webLinks[props.index]}><button
                             className='project-btn'
                             link={ webLinks[props.index]}>
-                           <a href={webLinks[props.index]}>
+                         
                            VIEW WEBSITE
-                           </a>
+                          
                             
                         </button>
+                        </a>
                         <hr/>
                     </Grid>
                     <Grid item sm={6} xs={12} direction='column' className='right-text'>
