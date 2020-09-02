@@ -305,6 +305,7 @@
 }
 
 .full-project-cont .description-row .left-text a button {
+  cursor: pointer;
   margin-top: 20px;
   padding: 3% 5%;
   background-color: transparent;
