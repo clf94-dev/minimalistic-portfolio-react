@@ -299,7 +299,12 @@
   color: #5fb4a2;
 }
 
-.full-project-cont .description-row .left-text button {
+.full-project-cont .description-row .left-text a {
+  text-decoration: none;
+  color: #33323D;
+}
+
+.full-project-cont .description-row .left-text a button {
   margin-top: 20px;
   padding: 3% 5%;
   background-color: transparent;
@@ -308,23 +313,15 @@
   transition: all 0.3s ease-out;
 }
 
-.full-project-cont .description-row .left-text button:hover {
+.full-project-cont .description-row .left-text a button:hover {
   transition: all 0.3s ease-out;
+  color: #fafafa;
   background-color: #33323D;
   transition: 250ms;
 }
 
-.full-project-cont .description-row .left-text button a {
-  text-decoration: none;
-  color: #33323D;
-}
-
-.full-project-cont .description-row .left-text button a:hover {
-  color: #fff;
-}
-
 @media screen and (max-width: 756px) {
-  .full-project-cont .description-row .left-text button {
+  .full-project-cont .description-row .left-text a button {
     width: 50%;
   }
 }
