@@ -24,7 +24,6 @@ $font-weight7:700;
     align-items: center;
     font-size: 1.2rem;
     background-color: #fff;
-    position: sticky;
     top: 0;
     z-index: 5;
     .navbar-container {
@@ -304,6 +303,39 @@ $font-weight7:700;
             img {
                 width: 100%;
                 margin: 15px auto;
+            }
+        }
+    }
+    .next-prev-proj {
+        h5 {
+            font-size: 14px;
+            font-family: $font-body;
+            font-weight: $font-weight3;
+        }
+        h3 {
+            margin-top: 5px;
+            font-size: 20px;
+            font-family: $font-heading;
+            font-weight: $font-weight7;
+        }
+        .previous-text {
+            text-align: start;
+            padding-top: 20px;
+        }
+        .next-text {
+            text-align: end;
+            padding-top: 20px;
+        }
+        Button {
+            width: 50px;
+            height: 80px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            &:hover {
+                background-color: #5fb4a2;
+                color: #33323D;
+                border: 1px solid #33323D;
+                transition: all 0.3s ease-out;
             }
         }
     }

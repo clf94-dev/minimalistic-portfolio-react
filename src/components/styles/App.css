@@ -11,7 +11,6 @@
   align-items: center;
   font-size: 1.2rem;
   background-color: #fff;
-  position: sticky;
   top: 0;
   z-index: 5;
 }
@@ -334,6 +333,43 @@
 .full-project-cont .description-row .right-text img {
   width: 100%;
   margin: 15px auto;
+}
+
+.full-project-cont .next-prev-proj h5 {
+  font-size: 14px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+}
+
+.full-project-cont .next-prev-proj h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+}
+
+.full-project-cont .next-prev-proj .previous-text {
+  text-align: start;
+  padding-top: 20px;
+}
+
+.full-project-cont .next-prev-proj .next-text {
+  text-align: end;
+  padding-top: 20px;
+}
+
+.full-project-cont .next-prev-proj Button {
+  width: 50px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.full-project-cont .next-prev-proj Button:hover {
+  background-color: #5fb4a2;
+  color: #33323D;
+  border: 1px solid #33323D;
+  transition: all 0.3s ease-out;
 }
 
 .cta-cont {
