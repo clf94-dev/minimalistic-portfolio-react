@@ -18,6 +18,7 @@ function App() {
                     <Route path='/full-project/:index' component={FullProject}></Route>
 
                     <Route path='/contact-me' component={Contact}></Route>
+                    
                 </Switch>
                 <Footer/>
             </Router>

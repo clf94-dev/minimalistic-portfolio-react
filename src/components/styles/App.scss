@@ -277,8 +277,25 @@ $font-weight7:700;
                 font-weight: $font-weight4;
                 color: $desaturated-cyan;
             }
-            Button {
+            button {
                 margin-top: 20px;
+                padding: 3% 5%;
+                background-color: transparent;
+                color: $grayish-dark-blue;
+                border: 1px solid $grayish-dark-blue;
+                &:hover {
+                    transition: all 0.3s ease-out;
+                    background-color: $grayish-dark-blue;
+                    transition: 250ms;
+                }
+                a {
+                    text-decoration: none;
+                    color: $grayish-dark-blue;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                transition: all 0.3s ease-out;
                 @media screen and (max-width: 756px) {
                     width: 50%;
                 }

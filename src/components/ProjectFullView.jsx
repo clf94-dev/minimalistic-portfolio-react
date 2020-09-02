@@ -27,6 +27,7 @@ export default function ProjectFullView(props) {
     const ProjectStaticImg = [ManageStatic, BookmarkStatic, InsureStatic, FyloStatic];
     const ProjectStaticImg2 = [ManageStatic2, BookmarkStatic2, InsureStatic2, FyloStatic2];
     const previousProject = [3, 0, 1, 2];
+    const webLinks =["https://manage-landing-page-26jdlsq2z.vercel.app/","https://booking-landing-page.vercel.app/", "https://insure-landing-page-gegnuifr6.vercel.app/","https://fylo-dark-theme-landing-page-hk1hmyywi.vercel.app/"]
     const nextProject = [1, 2, 3, 0];
 
     return (
@@ -44,13 +45,14 @@ export default function ProjectFullView(props) {
                         <p>{PortfolioFullProj[props.index].textRight}</p>
                         <h5>{PortfolioFullProj[props.index].designType}</h5>
                         <h5>{PortfolioFullProj[props.index].languages}</h5>
-                        <Button
+                        <button
                             className='project-btn'
-                            link=""
-                            buttonStyle='btn--outline'
-                            buttonSize='btn--large'>
-                            VIEW WEBSITE
-                        </Button>
+                            link={ webLinks[props.index]}>
+                           <a href={webLinks[props.index]}>
+                           VIEW WEBSITE
+                           </a>
+                            
+                        </button>
                         <hr/>
                     </Grid>
                     <Grid item sm={6} xs={12} direction='column' className='right-text'>

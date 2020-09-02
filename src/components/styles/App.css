@@ -299,12 +299,32 @@
   color: #5fb4a2;
 }
 
-.full-project-cont .description-row .left-text Button {
+.full-project-cont .description-row .left-text button {
   margin-top: 20px;
+  padding: 3% 5%;
+  background-color: transparent;
+  color: #33323D;
+  border: 1px solid #33323D;
+  transition: all 0.3s ease-out;
+}
+
+.full-project-cont .description-row .left-text button:hover {
+  transition: all 0.3s ease-out;
+  background-color: #33323D;
+  transition: 250ms;
+}
+
+.full-project-cont .description-row .left-text button a {
+  text-decoration: none;
+  color: #33323D;
+}
+
+.full-project-cont .description-row .left-text button a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 756px) {
-  .full-project-cont .description-row .left-text Button {
+  .full-project-cont .description-row .left-text button {
     width: 50%;
   }
 }
